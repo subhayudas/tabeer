@@ -5,7 +5,7 @@ const LandingPage = () => {
         {/* Full-screen video background */}
         <video
           className="video-background"
-          src="/Youtube_Video.mp4"
+          src="/video.mp4"
           autoPlay
           loop
           muted
