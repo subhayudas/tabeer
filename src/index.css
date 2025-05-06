@@ -40,6 +40,63 @@
     to { transform: rotate(360deg); }
   }
 
+  /* New animations */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  @keyframes flipIn {
+    0% { transform: perspective(400px) rotateY(90deg); opacity: 0; }
+    100% { transform: perspective(400px) rotateY(0deg); opacity: 1; }
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes zoomOut {
+    from { transform: scale(1.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+
+  @keyframes glitter {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes rotateIn {
+    from { transform: rotate(-180deg); opacity: 0; }
+    to { transform: rotate(0); opacity: 1; }
+  }
+
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  /* Animation classes */
   .animate-fadeIn {
     animation: fadeIn 0.5s ease-out forwards;
   }
@@ -66,6 +123,90 @@
 
   .animate-spin {
     animation: spin 1s linear infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+
+  .animate-flipIn {
+    animation: flipIn 0.7s ease-out forwards;
+  }
+
+  .animate-zoomIn {
+    animation: zoomIn 0.5s ease-out forwards;
+  }
+
+  .animate-zoomOut {
+    animation: zoomOut 0.5s ease-out forwards;
+  }
+
+  .animate-shake {
+    animation: shake 0.8s ease-in-out;
+  }
+
+  .animate-glitter {
+    animation: glitter 1.5s infinite;
+  }
+
+  .animate-rotateIn {
+    animation: rotateIn 0.7s ease-out forwards;
+  }
+
+  .animate-heartbeat {
+    animation: heartbeat 1.5s infinite;
+  }
+
+  /* Text shadow utilities */
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 2px rgba(139, 0, 0, 0.2);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 0 3px rgba(139, 0, 0, 0.3);
+  }
+
+  /* Animation delays */
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .delay-700 {
+    animation-delay: 700ms;
+  }
+
+  .delay-1000 {
+    animation-delay: 1000ms;
   }
 }
 
