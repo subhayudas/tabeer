@@ -21,7 +21,7 @@ const Cards = () => {
             data-scroll
             data-scroll-speed="-.1"
             className="rounded-xl h-full object-cover"
-            src="https://images.pexels.com/photos/2531734/pexels-photo-2531734.jpeg"
+            src="/images/saree.webp"
             alt="Traditional Saree Collection"
           />
         </div>
@@ -42,7 +42,7 @@ const Cards = () => {
             data-scroll
             data-scroll-speed="-.1"
             className="rounded-xl h-full object-cover"
-            src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg"
+            src="/images/dress2.webp"
             alt="Designer Lehenga Collection"
           />
         </div>
@@ -63,7 +63,7 @@ const Cards = () => {
             data-scroll
             data-scroll-speed="-.1"
             className="rounded-xl h-full object-cover"
-            src="https://images.pexels.com/photos/10909386/pexels-photo-10909386.jpeg"
+            src="/images/dress.webp"
             alt="Designer Kurti Collection"
           />
         </div>

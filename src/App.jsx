@@ -1,8 +1,13 @@
 /* eslint-disable no-unused-vars */
 import Navbar from "./Components/Navbar";
 import LandingPage from "./Components/LandingPage";
+import PromotionalBanner from "./Components/PromotionalBanner";
 import Cards from "./Components/Cards";
 import About from "./Components/About";
+import CategoryHighlights from "./Components/CategoryHighlights";
+import Bestsellers from "./Components/Bestsellers";
+import NewArrivals from "./Components/NewArrivals";
+import ShopTheLook from "./Components/ShopTheLook";
 import Products from "./Components/Products";
 import Thanks from "./Components/Thanks";
 import OurImpact from "./Components/OurImpact";
@@ -132,8 +137,13 @@ const App = () => {
       <div className="main relative w-full bg-neutral">
         <Navbar />
         <LandingPage />
+        <PromotionalBanner />
         <Cards />
         <About />
+        <CategoryHighlights />
+        <Bestsellers />
+        <NewArrivals />
+        <ShopTheLook />
         <Products />
         <Thanks />
         <OurImpact /> {/*  and Input Tag  */}

@@ -28,7 +28,7 @@ const OurImpact = () => {
               data-scroll
               data-scroll-speed="-.2"
               className="h-[90vh] w-full rounded-xl object-cover"
-              src="https://images.pexels.com/photos/12809964/pexels-photo-12809964.jpeg"
+              src="/images/dress3.webp"
               alt="Indian artisan weaving traditional fabric"
             />
           </div>
@@ -37,7 +37,7 @@ const OurImpact = () => {
               data-scroll
               data-scroll-speed="-.2"
               className="h-[90vh] w-full rounded-xl object-cover"
-              src="https://images.pexels.com/photos/6192554/pexels-photo-6192554.jpeg"
+              src="/images/trouser.webp"
               alt="Traditional Indian embroidery work"
             />
           </div>

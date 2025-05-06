@@ -8,7 +8,7 @@ const Products = () => {
             <div className="h-[68%] w-[80%] overflow-hidden rounded-lg">
               <img
                 className="h-full w-full object-cover"
-                src="https://images.pexels.com/photos/2995309/pexels-photo-2995309.jpeg"
+                src="/images/saree3.webp"
                 alt="Handcrafted Banarasi Silk Saree"
               />
             </div>
@@ -25,7 +25,7 @@ const Products = () => {
             <div className="h-[68%] w-[80%] overflow-hidden rounded-lg">
               <img
                 className="h-full w-full object-cover"
-                src="https://images.pexels.com/photos/2058383/pexels-photo-2058383.jpeg"
+                src="/images/dress4.webp"
                 alt="Designer Bridal Lehenga"
               />
             </div>
