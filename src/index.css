@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: #8B0000; /* Deep maroon */
+  color: #F5F5DC; /* Beige */
+}
+
+/* Base font families */
+.nav,
+.products,
+.btnTxt,
+.txtAfterBtn,
+.impactPara,
+.footer,
+.footerdown,
+.thanksTxt {
+  font-family: 'Poppins', sans-serif;
+}
+
+.landingPage,
+.abouttxt,
+.mainTxt,
+.impacttxt,
+.inputTxt {
+  font-family: 'Rozha One', serif;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(245, 245, 220, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-dark {
+  background: rgba(139, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 0, 0, 0.1);
+}
+
+/* Video background styles */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none; /* Prevents interaction with the video */
+}
+
+/* Ensure video covers the entire viewport on all devices */
+.landingPage {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; /* Ensures no scrollbars appear due to video */
+}
+
+/* Prevent video controls from showing */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+video::-webkit-media-controls-current-time-display {
+  display: none !important;
+}
+
+video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-toggle-closed-captions-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .landingPage .text {
+    padding-top: 0;
+  }
+}
+
+/* Ensure the video maintains aspect ratio while covering the container */
+@media (max-aspect-ratio: 16/9) {
+  .video-background {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-background {
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+  }
+}
